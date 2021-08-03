@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+html, body {
+    direction: rtl;
+    text-align: right;
+    height: 100%;
+}
+
+html * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+table {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    direction: rtl;
+    text-align: right;
+    overflow-x: auto;
+    white-space: nowrap;
+
+
+}
+th.mat-header-cell  {
+    text-align: right;
+    max-width: 300px;
+    background-color: #C0C0C0;
+    font-size: 15px;
+    
+}
+
+button{
+    /* margin-left: 20px;
+    width: 100%; */
+}
+
+
+@media only screen and (max-width: 720px) {  
+    table{ 
+    display: block;
+}
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+
+
+
+
+
+snack-bar-container.success {
+    background-color: #4cc54c;
+    color: #fff;
+}
+
+snack-bar-container.warn {
+    background-color: #f99157;
+    color: #fff;
+}
+
+snack-bar-container.notification simple-snack-bar {
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+.gradient-Header {
+    background: #2980b9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #343a40, #9f0100);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #343a40, #9f0100);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    height: 60px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.gradient-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.btn-dialog-close {
+    width: 45px;
+    min-width: 0px !important;
+    height: 40px;
+    padding: 0px !important;
+}
+
+/* mat-confirm-dialog (customised dialog) */
+
+
+
+.confirm-dialog-container .mat-dialog-container {
+    border-radius: .25em .25em .4em .4em;
+    padding: 0px;
+    overflow: visible;
+}
+
+.confirm-dialog-container .content-container {
+    margin: 5px 5px 15px 5px;
+    color: #3f3f3f;
+    display: flex;
+}
+
+.confirm-dialog-container #close-icon {
+    margin-left: auto;
+    order: 2;
+    font-weight: bolder;
+}
+
+.confirm-dialog-container #close-icon:hover {
+    cursor: pointer;
+}
+
+.confirm-dialog-container #no-button {
+    height: 50px;
+    width: 50%;
+    background-color: #37e06f;
+    color: white;
+    border-radius: 0px;
+}
+
+.confirm-dialog-container #yes-button {
+    height: 50px;
+    width: 50%;
+    background-color: #d86447;
+    color: white;
+    border-radius: 0px;
+}
+
+.confirm-dialog-container span.content-span {
+    padding: 35px 16px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.mat-chip.mat-purble {
+    background-color: #B75390 !important;
+    color: white !important;
+}
+
+.mat-chip.mat-lightGreen {
+    background-color: #46B970 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.mat-chip.mat-red {
+    background-color: #C73843 !important;
+    color: white !important;
+    font-weight: bold;
+}

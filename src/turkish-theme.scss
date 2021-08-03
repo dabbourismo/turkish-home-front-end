@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@include mat-core();
+// Define the default theme (same as the example above).
+$turkish-theme-primary: mat-palette($mat-indigo);
+$turkish-theme-accent:  mat-palette($mat-pink, A200, A100, A400);
+$turkish-theme-theme:   mat-light-theme((
+  color: (
+    primary: $turkish-theme-primary,
+    accent: $turkish-theme-accent,
+  )
+));

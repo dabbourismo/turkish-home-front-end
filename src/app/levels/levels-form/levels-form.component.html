@@ -1,0 +1,45 @@
+<app-loader></app-loader>
+<div class="row">
+    <div class="col-md-12">
+        <mat-card>
+            <mat-card-title>
+                <div class="gradient-Header">
+                    <div class="gradient-child">
+                        <h5 *ngIf="data.id == 0">اضافة</h5>
+                        <h5 *ngIf="data.id !== 0">تعديل</h5>
+                    </div>
+                </div>
+
+            </mat-card-title>
+            <form [formGroup]="levelsForm" autocomplete="off" novalidate (ngSubmit)="onSubmit(levelsForm.value)">
+                <mat-card-content>
+                    <input type="hidden" formControlName="id">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <mat-form-field>
+                                <input matInput type="text" placeholder="اسم المرحلة" formControlName="name" id="name">
+                                <mat-error *ngIf="hasError('name', 'required')">هذا الحقل مطلوب</mat-error>
+                                <mat-error *ngIf="hasError('name', 'maxlength')">الاسم اكثر من 200 حرف</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+
+                </mat-card-content>
+
+                <mat-card-actions>
+
+                    <button mat-raised-button color="primary" [disabled]="!levelsForm.valid">
+                        {{ data.id !== 0 ? 'تعديل' : 'اضافة' }}
+                    </button>
+                    <button mat-flat-button color="secondary" matDialogClose>اغلاق</button>
+
+                </mat-card-actions>
+            </form>
+         
+        </mat-card>
+
+
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"  style="direction: ltr">
+    <a class="navbar-brand">Turkish Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" style="float: right;" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav mr-auto" style="direction: rtl;">
+            <li class="nav-item active" style="float: right;">
+                <!-- <a mat-button>تسجيل خروج <mat-icon>logout</mat-icon></a> -->
+            </li>
+        </ul>
+
+
+        <!-- ml ==> right side , mr ==> left site -->
+        <ul class="navbar-nav ml-auto" style="direction: rtl;">
+            <li class="nav-item active">
+                <a mat-button routerLink="/levels-list">المراحل</a>
+                <a mat-button routerLink="/materials-list">المواد</a>
+                <a mat-button routerLink="/units-list">الوحدات</a>
+                <a mat-button routerLink="/exams-list">الاختبارات</a>
+                <a mat-button routerLink="/notifications-list">الاشعارات</a>
+                <a mat-button (click)="openDialog()">الاعدادات</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
